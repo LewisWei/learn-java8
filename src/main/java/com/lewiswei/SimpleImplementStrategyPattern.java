@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 /**
  * 使用 Predicate 实现策略模式
  */
-public class implementStrategyPattern {
+public class SimpleImplementStrategyPattern {
 
     public static void main(String[] args) {
         List<Integer> values = Arrays.asList(1, 2, 3, 4, 5, 6);

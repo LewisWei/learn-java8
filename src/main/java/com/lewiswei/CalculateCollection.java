@@ -19,12 +19,11 @@ public class CalculateCollection {
         }
         System.out.println(total);
 
-
         // java8
         System.out.println(
                 values.stream() // 创建一个 sequential
                         .map(e -> e * 2) // 实现 Consumer
-                        .reduce(0, (lastCalculateResult, e) -> lastCalculateResult + e) // 实现 BiFunction
+                        .reduce(0, (previousCallResult, e) -> previousCallResult + e) // 实现 BiFunction
         );
     }
 }
